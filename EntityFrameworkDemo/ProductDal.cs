@@ -16,6 +16,21 @@ namespace EntityFrameworkDemo
                 return context.Products.ToList();
             }
         }
+        public Product GetById(int id)
+        {
+            using (ETradeContext context = new ETradeContext())
+            {
+                var result = context.Products.FirstOrDefault(p => p.Id == id);
+                return result;
+            }
+        }
+        public List<Product> GetByName(string key)
+        {
+            using (ETradeContext context = new ETradeContext())
+            {
+                return context.Products.Where(p=>p.Name.Contains(key)).ToList();
+            }
+        }
         public void Add(Product product)
         {
             using (ETradeContext context = new ETradeContext())

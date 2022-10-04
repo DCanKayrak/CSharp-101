@@ -56,11 +56,11 @@ namespace ETradeProject
             // 
             this.dgw_product.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgw_product.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgw_product.Location = new System.Drawing.Point(54, 40);
+            this.dgw_product.Location = new System.Drawing.Point(54, 56);
             this.dgw_product.Name = "dgw_product";
             this.dgw_product.RowHeadersWidth = 51;
             this.dgw_product.RowTemplate.Height = 24;
-            this.dgw_product.Size = new System.Drawing.Size(686, 217);
+            this.dgw_product.Size = new System.Drawing.Size(686, 201);
             this.dgw_product.TabIndex = 0;
             this.dgw_product.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgw_product_CellClick);
             this.dgw_product.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
@@ -216,9 +216,9 @@ namespace ETradeProject
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(746, 216);
+            this.btnDelete.Location = new System.Drawing.Point(647, 12);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(50, 23);
+            this.btnDelete.Size = new System.Drawing.Size(93, 38);
             this.btnDelete.TabIndex = 9;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = true;
